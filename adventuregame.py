@@ -42,10 +42,68 @@ if first_direction == "left":
                 elif z == "D":
                     print("You call the cops on him for hurting your feelings and they arrive to the house. You tell the cops he is trespassing and the cops arrest him and now you have the hosue to yourself. You are safe and gain a house.")
                 elif z == "E":
-                    print("")
+                    print("You laugh at him and he gets embarressed and calls the cops on you. You are arrested for trespassing and hurting his feelings. (I guess you should have been more sensitive)")
         elif y == "B":
-            print("You leave the room.")
+            print("You leave the room. And leave the house.")
         
     elif x == "B":
-
+        print("You go down the hallway and see a door. Do you \nA. Open the door\nB. Keep walking down the hallway")
+        y = input("A. Open the door\nB. Keep walking down the hallway")
+        if y == "A":
+            print("You open the door and a kid sees you and screams. Do you \nA. Run\nB. Stay\nC. Call the cops")
+            z = input("A. Run\nB. Stay\nC. Call the cops")
+            if z == "A":
+                print("You run and the kid calls to his dad. Do you \nA. Run out of the house\nB. Run out of the room")
+                w = input("A. Run out of the house\nB. Run out of the room")
+                if w == "A":
+                    print("You run out of the house and the dad calls the cops. Luckily you get away and the cops never find you.")
+                elif w == "B":
+                    print("You run out of the room and the dad calls the cops. You have three places you can go and hide. Do you hide in \nA. The closet\nB. The bathroom\nC. The bedroom") 
+                    v = input("A. The closet\nB. The bathroom\nC. The bedroom")
+                    if v == "A":
+                        print("You hide in the closet and the cops arrive to the house, the dad tell them you went upstairs. They search the house and find you in the closet. Do you \nA. Try to run\nB. Give up\nC. Fight the cops")
+                        u = input("A. Try to run\nB. Give up\nC. Fight the cops")
+                        if u == "A":
+                            print("You try to run but the cops block your path. (was that really a good idea?) You are arrested for trespassing.")
+                        elif u == "B":
+                            print("You give up and the cops arrest you for trespassing.")
+                        elif u == "C":
+                            print("You throw a punch but the cop dodges it and tases you. You are arrested for trespassing and assult. (Talk about double trouble)")
+                    elif v == "B":
+                        print("You hide in the bathroom and the cops arrive to the house, the dad tell them you went upstairs. They search the house and find you in the bathroom hiding behind the curtain. You are arrested for trespassing.")
+                    elif v == "C":
+                        print("You hide in the bedroom and the cops arrive to the house, the dad tell them you went upstairs. They search the house and find you in the bedroom. You are arrested for trespassing.")
     elif x == "C":
+        print("You go up the stairs and see a door. Do you \nA. Open the door\nB. Keep walking up the stairs")
+        y = input("A. Open the door\nB. Keep walking up the stairs")
+        if y == "A":
+            print("You open the door and see a man sleeping. Do you \nA. Wake him up\nB. Leave him alone")
+            z = input("A. Wake him up\nB. Leave him alone")
+            if z == "A":
+                print("You wake him up and he gets mad at you for waking him up. He calls the cops on you and you are arrested for trespassing.")
+            elif z == "B":
+                print("You leave him alone and leave the house safely.")
+        elif y == "B":
+            print("You keep walking up the stairs and see a window. Do you \nA. Jump out of the window\nB. Keep walking up the stairs")
+            z = input("A. Jump out of the window\nB. Keep walking up the stairs")
+            if z == "A":
+                print("You jump out of the window and break your leg. You are taken to the hospital and arrested for trespassing.")
+            elif z == "B":
+                print("You keep walking up the stairs and see a door. Do you \nA. Open the door\nB. Keep walking up the stairs")
+                w = input("A. Open the door\nB. Keep walking up the stairs")
+                if w == "A":
+                    print("You open the door and see a man sleeping. Do you \nA. Wake him up\nB. Leave him alone")
+                    v = input("A. Wake him up\nB. Leave him alone")
+                    if v == "A":
+                        print("You wake him up and he gets mad at you for waking him up. He calls the cops on you and you are arrested for trespassing.")
+                    elif v == "B":
+                        print("You leave him alone and leave the house safely.")
+                elif w == "B":
+                    print("You keep walking up the stairs and see a window. Do you \nA. Jump out of the window\nB. Keep walking up the stairs")
+                    v = input("A. Jump out of the window\nB. Keep walking up the stairs")
+                    if v == "A":
+                        print("You jump out of the window and break your leg. You are taken to the hospital and arrested for trespassing.")
+                    elif v == "B":
+                        print("Stairway to heaven....")
+else:
+    print("You go right and hit a wall. Everyone in the house hears you and kicks you out. You are safe but embarrassed.")
