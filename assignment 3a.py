@@ -86,3 +86,4 @@ for number in numbers:
         print("3rd")
     else:
         print(f"{number}th")
+        
