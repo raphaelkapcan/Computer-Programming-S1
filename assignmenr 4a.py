@@ -110,4 +110,3 @@ cities = {
 for city, info in cities.items():
     print(city)
     print(info)
-    print()
